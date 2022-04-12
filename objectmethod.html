@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p"></p>
+    <p id="i"></p>
+    <script>
+        //Program 1
+    var person = {
+        firstName : " Aziz ",
+        lastName : " F ",
+        id: 9999,
+    };
+    person.name = function() {
+        return this.firstName + " " + this.lastName;
+    };
+
+    document.getElementById("p").innerHTML =
+    " Nama Saya Adalah " + person.name();
+
+        //Program 2 
+    var pekerja = {
+        firstName2: " Owen ",
+        lastName2: " K ",
+        id: 9998
+    };
+    pekerja.name = function() {
+        return this.firstName2 + " " + this.lastName2;
+    };
+
+    document.getElementById("i").innerHTML =
+    " Nama Pekerja " + pekerja.name();
+    </script>
+</body>
+</html>
